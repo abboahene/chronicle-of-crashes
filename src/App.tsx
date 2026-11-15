@@ -769,10 +769,10 @@ export function App() {
           Missing a major outage or breach?{' '}
           <a
             className="footer-link"
-            href="https://github.com/new"
+            href="https://github.com/abboahene/chronicle-of-crashes/issues/new?template=suggest-incident.yml"
             target="_blank"
             rel="noreferrer"
-            title="Use .github/ISSUE_TEMPLATE/suggest-incident.yml in the repository"
+            title="Submit a new incident via GitHub Issues"
           >
             Suggest an incident →
           </a>
