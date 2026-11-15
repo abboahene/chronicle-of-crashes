@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Chronicle of Crashes (1998–2026)</title>
+    <link>https://benefo.dev/chronicle-of-crashes/</link>
+    <description>Latest synced software crashes, cloud outages, and cyberattacks from Chronicle of Crashes.</description>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 15 Nov 2026 05:23:26 GMT</lastBuildDate>
+    <item>
+      <title>[2026-11-15] Cloudflare: Elevated number of errors in Bogotá</title>
+      <link>https://benefo.dev/chronicle-of-crashes/?incident=sp-cloudflare-sozoycnmog2m</link>
+      <guid isPermaLink="false">sp-cloudflare-sozoycnmog2m</guid>
+      <category>crash</category>
+      <description>Resolved 2026-11-15 — Between 01:30-03:00 UTC customers reaching Bogotá, CO may have experienced an elevated latency and a number of 4xx errors.</description>
+    </item>
+    <item>
+      <title>[2026-11-14] Cloudflare: Elevated error rates on R2 buckets in West North America</title>
+      <link>https://benefo.dev/chronicle-of-crashes/?incident=sp-cloudflare-dpao7idy3zei</link>
+      <guid isPermaLink="false">sp-cloudflare-dpao7idy3zei</guid>
+      <category>crash</category>
+      <description>Resolved 2026-11-14 — This incident has been resolved.</description>
+    </item>
+    <item>
+      <title>[2026-11-13] Cloudflare: Cloudflare is seeing an issue with Workers API availability</title>
+      <link>https://benefo.dev/chronicle-of-crashes/?incident=sp-cloudflare-e7ktq32gphhe</link>
+      <guid isPermaLink="false">sp-cloudflare-e7ktq32gphhe</guid>
+      <category>crash</category>
+      <description>Resolved 2026-11-14 — This incident has been resolved.</description>
+    </item>
+    <item>
+      <title>[2026-11-14] Cloudflare: Increased errors for R2 and Tiered Cache</title>
+      <link>https://benefo.dev/chronicle-of-crashes/?incident=sp-cloudflare-a643zcsfc71q</link>
+      <guid isPermaLink="false">sp-cloudflare-a643zcsfc71q</guid>
+      <category>crash</category>
+      <description>Resolved 2026-11-14 — This incident has been resolved.</description>
+    </item>
+    <item>
+      <title>[2026-11-13] Cloudflare: Issues with 1.1.1.1 public resolver in Canada</title>
+      <link>https://benefo.dev/chronicle-of-crashes/?incident=sp-cloudflare-rikplz89rpml</link>
+      <guid isPermaLink="false">sp-cloudflare-rikplz89rpml</guid>
+      <category>crash</category>
+      <description>Resolved 2026-11-14 — This incident has been resolved.</description>
+    </item>
+    <item>
+      <title>[2026-11-13] Cloudflare: Cloudflare is currently having an issue with the r8.im registry used for Replicate model publishing and builds is currently restricted</title>
+      <link>https://benefo.dev/chronicle-of-crashes/?incident=sp-cloudflare-mc91s22odfvf</link>
+      <guid isPermaLink="false">sp-cloudflare-mc91s22odfvf</guid>
+      <category>crash</category>
+      <description>Resolved 2026-11-14 — This incident has been resolved.</description>
+    </item>
+    <item>
+      <title>[2026-11-13] Cloudflare: Elevated error rate for workers startup</title>
+      <link>https://benefo.dev/chronicle-of-crashes/?incident=sp-cloudflare-y03on2svrrxt</link>
+      <guid isPermaLink="false">sp-cloudflare-y03on2svrrxt</guid>
+      <category>crash</category>
+      <description>Resolved 2026-11-13 — This incident has been resolved.</description>
+    </item>
+    <item>
+      <title>[2026-11-12] Cloudflare: Durable Objects increased error rates in North America</title>
+      <link>https://benefo.dev/chronicle-of-crashes/?incident=sp-cloudflare-9zxr2bkqoct7</link>
+      <guid isPermaLink="false">sp-cloudflare-9zxr2bkqoct7</guid>
+      <category>crash</category>
+      <description>Resolved 2026-11-13 — This incident has been resolved.</description>
+    </item>
+    <item>
+      <title>[2026-11-11] Cloudflare: Replicate Model Registry Unavailable</title>
+      <link>https://benefo.dev/chronicle-of-crashes/?incident=sp-cloudflare-yu63fhh2peb7</link>
+      <guid isPermaLink="false">sp-cloudflare-yu63fhh2peb7</guid>
+      <category>crash</category>
+      <description>Resolved 2026-11-13 — This incident has been resolved.</description>
+    </item>
+    <item>
+      <title>[2026-11-06] Cloudflare: Fedramp Customers have Delayed Purges</title>
+      <link>https://benefo.dev/chronicle-of-crashes/?incident=sp-cloudflare-wp49bp8bqo6c</link>
+      <guid isPermaLink="false">sp-cloudflare-wp49bp8bqo6c</guid>
+      <category>crash</category>
+      <description>Resolved 2026-11-12 — This incident has been resolved.</description>
+    </item>
+    <item>
+      <title>[2026-11-12] Cloudflare: Replicate Issue</title>
+      <link>https://benefo.dev/chronicle-of-crashes/?incident=sp-cloudflare-1na2mbfshgdh</link>
+      <guid isPermaLink="false">sp-cloudflare-1na2mbfshgdh</guid>
+      <category>crash</category>
+      <description>Resolved 2026-11-12 — This incident has been resolved.</description>
+    </item>
+    <item>
+      <title>[2026-11-12] Cloudflare: DNSSEC Configuration Change Issues</title>
+      <link>https://benefo.dev/chronicle-of-crashes/?incident=sp-cloudflare-8odt36zmvm36</link>
+      <guid isPermaLink="false">sp-cloudflare-8odt36zmvm36</guid>
+      <category>crash</category>
+      <description>Resolved 2026-11-12 — This incident has been resolved.</description>
+    </item>
+    <item>
+      <title>[2026-11-11] Cloudflare: Network Performance Degraded</title>
+      <link>https://benefo.dev/chronicle-of-crashes/?incident=sp-cloudflare-804glbb3pq6t</link>
+      <guid isPermaLink="false">sp-cloudflare-804glbb3pq6t</guid>
+      <category>crash</category>
+      <description>Resolved 2026-11-11 — This incident has been resolved.</description>
+    </item>
+    <item>
+      <title>[2026-11-11] Cloudflare: Workers deployments errors with D1 bindings</title>
+      <link>https://benefo.dev/chronicle-of-crashes/?incident=sp-cloudflare-3ptyvdaljq9b</link>
+      <guid isPermaLink="false">sp-cloudflare-3ptyvdaljq9b</guid>
+      <category>crash</category>
+      <description>Resolved 2026-11-11 — Cloudflare has identified and resolved an issue impacting Workers deployments with D1 bindings. Customers may have seen issues deploying their Workers between 12:42 UTC - 13:03 UTC 11th November 2026</description>
+    </item>
+    <item>
+      <title>[2026-11-11] Cloudflare: SSL Certificate Provisioning Issue</title>
+      <link>https://benefo.dev/chronicle-of-crashes/?incident=sp-cloudflare-21vwp89eiyjx</link>
+      <guid isPermaLink="false">sp-cloudflare-21vwp89eiyjx</guid>
+      <category>crash</category>
+      <description>Resolved 2026-11-11 — This incident has been resolved.</description>
+    </item>
+    <item>
+      <title>[2026-11-11] Cloudflare: Elevated number of 5xx errors in Hong Kong</title>
+      <link>https://benefo.dev/chronicle-of-crashes/?incident=sp-cloudflare-4qxszy04pdjw</link>
+      <guid isPermaLink="false">sp-cloudflare-4qxszy04pdjw</guid>
+      <category>crash</category>
+      <description>Resolved 2026-11-11 — Between 07:30-07:45 UTC customers reaching Hong Kong, may have experienced an elevated number of 5xx errors.</description>
+    </item>
+    <item>
+      <title>[2026-11-11] Cloudflare: Cloudflare Worker Builds Issue</title>
+      <link>https://benefo.dev/chronicle-of-crashes/?incident=sp-cloudflare-byzl30zyfc47</link>
+      <guid isPermaLink="false">sp-cloudflare-byzl30zyfc47</guid>
+      <category>crash</category>
+      <description>Resolved 2026-11-11 — This incident has been resolved.</description>
+    </item>
+    <item>
+      <title>[2026-11-10] Cloudflare: Changes to Cloudflare Workers are not producing Event Subscription events</title>
+      <link>https://benefo.dev/chronicle-of-crashes/?incident=sp-cloudflare-0ocqieaifg7h</link>
+      <guid isPermaLink="false">sp-cloudflare-0ocqieaifg7h</guid>
+      <category>crash</category>
+      <description>Status: identified — The issue has been identified and a fix is being implemented.</description>
+    </item>
+    <item>
+      <title>[2026-11-10] Cloudflare: Network Performance Issues in St. Louis, USA</title>
+      <link>https://benefo.dev/chronicle-of-crashes/?incident=sp-cloudflare-1h9c85fz6bm3</link>
+      <guid isPermaLink="false">sp-cloudflare-1h9c85fz6bm3</guid>
+      <category>crash</category>
+      <description>Resolved 2026-11-11 — This incident has been resolved.</description>
+    </item>
+    <item>
+      <title>[2026-11-10] Cloudflare: Prediction issue on OpenAI models via Replicate</title>
+      <link>https://benefo.dev/chronicle-of-crashes/?incident=sp-cloudflare-3en9cdyjn2sq</link>
+      <guid isPermaLink="false">sp-cloudflare-3en9cdyjn2sq</guid>
+      <category>crash</category>
+      <description>Resolved 2026-11-10 — This incident has been resolved.</description>
+    </item>
+    <item>
+      <title>[2026-11-10] Cloudflare: Account Analytics Filter Issue</title>
+      <link>https://benefo.dev/chronicle-of-crashes/?incident=sp-cloudflare-m644az5hr9xo</link>
+      <guid isPermaLink="false">sp-cloudflare-m644az5hr9xo</guid>
+      <category>crash</category>
+      <description>Resolved 2026-11-10 — This incident has been resolved.</description>
+    </item>
+    <item>
+      <title>[2026-11-09] Cloudflare: Changes made to Workers may be delayed or disrupted</title>
+      <link>https://benefo.dev/chronicle-of-crashes/?incident=sp-cloudflare-1x0tbxpmmttu</link>
+      <guid isPermaLink="false">sp-cloudflare-1x0tbxpmmttu</guid>
+      <category>crash</category>
+      <description>Resolved 2026-11-10 — This incident has been resolved.</description>
+    </item>
+    <item>
+      <title>[2026-11-09] Cloudflare: Network Performance Issues in Eastern North America</title>
+      <link>https://benefo.dev/chronicle-of-crashes/?incident=sp-cloudflare-88hc76jnq2gn</link>
+      <guid isPermaLink="false">sp-cloudflare-88hc76jnq2gn</guid>
+      <category>crash</category>
+      <description>Resolved 2026-11-09 — This incident has been resolved.</description>
+    </item>
+    <item>
+      <title>[2026-11-07] Cloudflare: Spectrum Availability Issue in Phoenix</title>
+      <link>https://benefo.dev/chronicle-of-crashes/?incident=sp-cloudflare-c60k3g4vsoc1</link>
+      <guid isPermaLink="false">sp-cloudflare-c60k3g4vsoc1</guid>
+      <category>crash</category>
+      <description>Resolved 2026-11-09 — This incident has been resolved.</description>
+    </item>
+    <item>
+      <title>[2026-11-07] Cloudflare: Network Performance Issues in Chicago</title>
+      <link>https://benefo.dev/chronicle-of-crashes/?incident=sp-cloudflare-x9orajjmvvwa</link>
+      <guid isPermaLink="false">sp-cloudflare-x9orajjmvvwa</guid>
+      <category>crash</category>
+      <description>Resolved 2026-11-07 — Between 04:55-05:12 UTC  7th Dec Cloudflare experienced issues with network performance in Chicago.</description>
+    </item>
+    <item>
+      <title>[2026-11-06] Cloudflare: Network Performance Issues in Singapore</title>
+      <link>https://benefo.dev/chronicle-of-crashes/?incident=sp-cloudflare-3ehw20ozwlkr</link>
+      <guid isPermaLink="false">sp-cloudflare-3ehw20ozwlkr</guid>
+      <category>crash</category>
+      <description>Resolved 2026-11-06 — This incident has been resolved.</description>
+    </item>
+    <item>
+      <title>[2026-11-06] Cloudflare: Wrangler Deployments, Pages, and Workers Builds failures</title>
+      <link>https://benefo.dev/chronicle-of-crashes/?incident=sp-cloudflare-wtsd415cavkc</link>
+      <guid isPermaLink="false">sp-cloudflare-wtsd415cavkc</guid>
+      <category>crash</category>
+      <description>Resolved 2026-11-06 — This incident has been resolved.</description>
+    </item>
+    <item>
+      <title>[2026-11-05] Cloudflare: Increased Errors for Durable Objects in Western Europe</title>
+      <link>https://benefo.dev/chronicle-of-crashes/?incident=sp-cloudflare-oy8gxjb38yse</link>
+      <guid isPermaLink="false">sp-cloudflare-oy8gxjb38yse</guid>
+      <category>crash</category>
+      <description>Resolved 2026-11-06 — This incident has been resolved.</description>
+    </item>
+    <item>
+      <title>[2026-11-05] Cloudflare: Workers Builds Issues</title>
+      <link>https://benefo.dev/chronicle-of-crashes/?incident=sp-cloudflare-yaa0witbl2me</link>
+      <guid isPermaLink="false">sp-cloudflare-yaa0witbl2me</guid>
+      <category>crash</category>
+      <description>Resolved 2026-11-05 — Queue times have returned to normal.</description>
+    </item>
+    <item>
+      <title>[2026-11-05] Cloudflare: Network disruption across multiple colocations in India</title>
+      <link>https://benefo.dev/chronicle-of-crashes/?incident=sp-cloudflare-1i6fnludjh1m</link>
+      <guid isPermaLink="false">sp-cloudflare-1i6fnludjh1m</guid>
+      <category>crash</category>
+      <description>Resolved 2026-11-05 — This incident has been resolved.</description>
+    </item>
+  </channel>
+</rss>
