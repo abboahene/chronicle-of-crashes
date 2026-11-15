@@ -5,10 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "prebuild": "node scripts/generate-rss.mjs",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
-    "generate:rss": "node scripts/generate-rss.mjs",
     "sync:kev": "node scripts/sync-cisa-kev.mjs",
     "sync:hibp": "node scripts/sync-hibp-breaches.mjs",
     "sync:outages": "node scripts/sync-outages.mjs",

@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import type { Incident } from '../types';
 import { deriveLessons } from '../utils/lessons';
-import { buildMarkdownCitation, getVerificationBadge } from '../utils/citations';
 
 interface IncidentModalProps {
   incident: Incident | null;
@@ -22,11 +21,9 @@ export function IncidentModal({
 }: IncidentModalProps) {
   const dialogRef = useRef<HTMLDialogElement>(null);
   const [copied, setCopied] = useState(false);
-  const [cited, setCited] = useState(false);
 
   useEffect(() => {
     setCopied(false);
-    setCited(false);
   }, [incident?.id]);
 
   useEffect(() => {
@@ -49,19 +46,6 @@ export function IncidentModal({
       await navigator.clipboard.writeText(window.location.href);
       setCopied(true);
       window.setTimeout(() => setCopied(false), 1800);
-    } catch {
-      // Ignore clipboard failures in restricted contexts
-    }
-  };
-
-  const handleCopyCitation = async () => {
-    if (!incident) return;
-    try {
-      await navigator.clipboard.writeText(
-        buildMarkdownCitation(incident, window.location.href),
-      );
-      setCited(true);
-      window.setTimeout(() => setCited(false), 1800);
     } catch {
       // Ignore clipboard failures in restricted contexts
     }
@@ -137,14 +121,6 @@ export function IncidentModal({
                 <span className={`badge severity-${incident.severity}`}>
                   {incident.severity}
                 </span>
-                {(() => {
-                  const v = getVerificationBadge(incident);
-                  return (
-                    <span className={`verification-badge verification-badge--${v.tier}`}>
-                      ✓ {v.label}
-                    </span>
-                  );
-                })()}
                 <span className="card-date">{incident.date}</span>
               </div>
               <h2 id="incident-modal-title" className="dialog-title">
@@ -237,10 +213,7 @@ export function IncidentModal({
             >
               ← Previous
             </button>
-            <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', flexWrap: 'wrap' }}>
-              <button type="button" className="dialog-nav-btn" onClick={handleCopyCitation}>
-                {cited ? '✓ Citation copied' : 'Cite (MD)'}
-              </button>
+            <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
               <button type="button" className="dialog-nav-btn" onClick={handleCopyLink}>
                 {copied ? '✓ Link copied' : 'Copy link'}
               </button>

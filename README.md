@@ -38,4 +38,3 @@ npm run dev
 | `npm run sync:kev` | Refresh only `src/data/cisa-kev.json` |
 | `npm run sync:hibp` | Refresh only `src/data/hibp-breaches.json` |
 | `npm run sync:outages` | Refresh only `src/data/outages.json` |
-

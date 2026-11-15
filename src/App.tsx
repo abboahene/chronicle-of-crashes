@@ -5,8 +5,6 @@ import type { EraRange, Incident, IncidentType, Severity } from './types';
 import { IncidentModal } from './components/IncidentModal';
 import { YearlyChart } from './components/YearlyChart';
 import { EraStoryModal } from './components/EraStoryModal';
-import { StackExplorerModal } from './components/StackExplorerModal';
-import { FailureSimulatorModal } from './components/FailureSimulatorModal';
 import { exportIncidentsAsCsv, exportIncidentsAsJson } from './utils/exportData';
 
 type TypeFilter = 'all' | IncidentType;
@@ -115,8 +113,6 @@ export function App() {
   const [externalIncidents, setExternalIncidents] = useState<Incident[]>([]);
   const [feedsLoading, setFeedsLoading] = useState(true);
   const [showBackToTop, setShowBackToTop] = useState(false);
-  const [stackOpen, setStackOpen] = useState(false);
-  const [simOpen, setSimOpen] = useState(false);
   const searchInputRef = useRef<HTMLInputElement>(null);
 
   // Press '/' anywhere (outside inputs/modals) to jump to search
@@ -125,13 +121,13 @@ export function App() {
       if (e.key !== '/' || e.metaKey || e.ctrlKey || e.altKey) return;
       const tag = (e.target as HTMLElement | null)?.tagName;
       if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') return;
-      if (activeIncidentId || storyOpen || stackOpen || simOpen) return;
+      if (activeIncidentId || storyOpen) return;
       e.preventDefault();
       searchInputRef.current?.focus();
     };
     window.addEventListener('keydown', onKeyDown);
     return () => window.removeEventListener('keydown', onKeyDown);
-  }, [activeIncidentId, storyOpen, stackOpen, simOpen]);
+  }, [activeIncidentId, storyOpen]);
 
   // Lazy-load large external JSON feeds so initial bundle stays small & fast
   useEffect(() => {
@@ -327,22 +323,6 @@ export function App() {
           <button
             type="button"
             className="export-btn"
-            onClick={() => setStackOpen(true)}
-            title="Browse failures by stack layer and copy pre-deploy checklists"
-          >
-            🛠 Stack Checklists
-          </button>
-          <button
-            type="button"
-            className="export-btn"
-            onClick={() => setSimOpen(true)}
-            title="Interactive simulations of retry storms, canary rollouts, and supply-chain cascades"
-          >
-            ⚡ Simulators
-          </button>
-          <button
-            type="button"
-            className="export-btn"
             onClick={() => {
               const pool = filteredIncidents.length > 0 ? filteredIncidents : allIncidents;
               if (pool.length === 0) return;
@@ -382,32 +362,6 @@ export function App() {
           <span className="stat-value">{groupedByYear.length} / 29</span>
         </div>
       </section>
-
-      {(() => {
-        const monthAbbr = new Date().toLocaleString('en-US', { month: 'short' });
-        const monthMatches = CURATED_WITH_LABEL.filter((i) =>
-          i.date.toLowerCase().startsWith(monthAbbr.toLowerCase()),
-        ).slice(0, 3);
-        if (monthMatches.length === 0) return null;
-        return (
-          <section className="on-this-month" aria-label={`Anniversaries in ${monthAbbr}`}>
-            <span className="on-this-month-label">On This Month ({monthAbbr}):</span>
-            <div className="on-this-month-items">
-              {monthMatches.map((m) => (
-                <button
-                  key={m.id}
-                  type="button"
-                  className="on-this-month-chip"
-                  onClick={() => setActiveIncidentId(m.id)}
-                >
-                  <span className="impact-card-year">{m.year}</span>
-                  <span>{m.title}</span>
-                </button>
-              ))}
-            </div>
-          </section>
-        );
-      })()}
 
       <YearlyChart
         data={yearStripData}
@@ -809,12 +763,7 @@ export function App() {
       </main>
 
       <footer className="site-footer">
-        <span>
-          Chronicle of Crashes • 1998–2026 •{' '}
-          <a className="footer-link" href="./feed.xml" target="_blank" rel="noreferrer">
-            RSS Feed
-          </a>
-        </span>
+        <span>Chronicle of Crashes • 1998–2026</span>
         <span>
           Missing a major outage or breach?{' '}
           <a
@@ -865,15 +814,6 @@ export function App() {
         }}
         onOpenIncident={(id) => setActiveIncidentId(id)}
       />
-
-      <StackExplorerModal
-        open={stackOpen}
-        incidents={allIncidents}
-        onClose={() => setStackOpen(false)}
-        onOpenIncident={(id) => setActiveIncidentId(id)}
-      />
-
-      <FailureSimulatorModal open={simOpen} onClose={() => setSimOpen(false)} />
     </div>
   );
 }
