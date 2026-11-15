@@ -1,6 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import type { Incident } from '../types';
-import type { EraRange } from './EraEvolution';
+import type { EraRange, Incident } from '../types';
 
 interface EraStoryConfig {
   id: string;

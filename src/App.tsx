@@ -1,10 +1,9 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { INCIDENTS } from './data/incidents';
 import { YEAR_META } from './data/years';
-import type { Incident, IncidentType, Severity } from './types';
+import type { EraRange, Incident, IncidentType, Severity } from './types';
 import { IncidentModal } from './components/IncidentModal';
 import { YearlyChart } from './components/YearlyChart';
-import { type EraRange } from './components/EraEvolution';
 import { EraStoryModal } from './components/EraStoryModal';
 import { exportIncidentsAsCsv, exportIncidentsAsJson } from './utils/exportData';
 

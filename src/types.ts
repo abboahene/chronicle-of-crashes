@@ -26,3 +26,9 @@ export interface YearMeta {
   eraNote: string;
 }
 
+export interface EraRange {
+  start: number;
+  end: number;
+  label: string;
+}
+
